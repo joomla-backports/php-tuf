@@ -178,8 +178,8 @@ abstract class MetadataBase
                 // We only expect to work with major version 1.
                 'spec_version' => [
                     new NotBlank(),
-                    new Type('string'),
-                    new Regex('/^1\.[0-9]+\.[0-9]+$/'),
+                    new Type(['type' => 'string']),
+                    new Regex(['pattern' => '/^1(\.[0-9]+){1,2}$/']),
                 ],
             ] + static::getVersionConstraints(),
             'allowExtraFields' => true,
