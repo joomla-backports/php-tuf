@@ -53,7 +53,7 @@ trait CanonicalJsonTrait
      * @throws \RuntimeException
      *     Thrown if sorting the array fails.
      */
-    private static function sortKeys(array &$data): void
+    protected static function sortKeys(array &$data): void
     {
         // Apply recursively on potential subarrays
         foreach ($data as $key => $value) {
