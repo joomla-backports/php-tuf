@@ -229,6 +229,10 @@ class Updater
             // § 5.3.7
             $rootData = $nextRoot;
 
+            // Recreate Verifier with new root metadata
+            $this->signatureVerifier = SignatureVerifier::createFromRootMetadata($rootData);
+            $this->universalVerifier = new UniversalVerifier($this->storage, $this->signatureVerifier, $this->metadataExpiration);
+
             // § 5.3.8
             $this->storage->save($nextRoot);
             // § 5.3.9: repeat from § 5.3.2.
