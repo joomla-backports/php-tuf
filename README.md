@@ -3,10 +3,8 @@
 ![build](https://github.com/php-tuf/php-tuf/actions/workflows/build.yml/badge.svg)
 
 ## IMPORTANT
-PHP-TUF is in a pre-release state and is not considered a complete or secure version of the TUF framework.
-It should currently only be used for testing, development and feedback.
-
-*Do not use in production for secure target downloads!!*
+This is a forked version of the original PHP-TUF client. It has been patched to
+cover the usecases of the Joomla project.
 
 PHP-TUF is a PHP implementation of [The Update Framework
 (TUF)](https://theupdateframework.io/) to provide signing and verification for
