@@ -8,7 +8,7 @@
         "squizlabs/php_codesniffer": "^3.7",
         "slevomat/coding-standard": "^8.2",
         "phpspec/prophecy-phpunit": "^2",
-        "guzzlehttp/guzzle": "^6.5 || ^7.2",
+        "guzzlehttp/guzzle": "^6.5 || ^7.2 || ^8.0",
         "phpspec/prophecy": "^1.16"
     },
     "license": "MIT",
@@ -18,10 +18,10 @@
         "php": "^8",
         "ext-json": "*",
         "paragonie/sodium_compat": "^1.13",
-        "symfony/validator": "^4.4 || ^5 || ^6",
-        "guzzlehttp/psr7": "^2.13",
+        "symfony/validator": "^4.4 || ^5 || ^6 || ^7",
+        "guzzlehttp/psr7": "^2.13 || ^3.0",
         "symfony/polyfill-php81": "^1.27",
-        "guzzlehttp/promises": "^1.5 || ^2.6"
+        "guzzlehttp/promises": "^1.5 || ^2.6 || ^3.0"
     },
     "suggest": {
         "ext-sodium": "Provides faster verification of updates"
